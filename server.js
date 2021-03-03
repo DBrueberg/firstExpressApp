@@ -12,7 +12,7 @@ const app = new express();
 
 // Using express.get to set the main app file to be index.html
 app.get("/", (req, res) => {
-    res.sendFile("index.html")
+    res.sendFile(__dirname + '/index.html')
 });
 
 // Listening for the HTTP_PORT so it can be loaded in
