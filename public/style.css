@@ -1,8 +1,23 @@
+/*
+Devin Brueberg
+ CSC435 Adv Web App Development
+ Assignment 1 - style.css for index.html
+ March 2, 2021
+ */
+
+/*  Setting the background to white and the 
+    height to 100% for a responsive page.
+*/
 html {
     background-color: white;
     height: 100%;
 }
 
+/*  The body will be a little darker to stand out 
+    and will be only 50% of the view screen. This 
+    is to draw the eye to the content. Body will 
+    be centered in the screen.
+*/
 body {
     background-color: bisque;
     border-radius: .5em;
@@ -14,11 +29,18 @@ body {
     overflow: hidden;
 }
 
+/*  The main header will be dark red and overflow 
+    will be hidden
+*/
 h1 {
     color: darkred;
     overflow: hidden;
 }
 
+/*  The ul that holds the name, class, and date will 
+    be in a horizontal flex box that will wrap when 
+    the viewport is shrunk.
+*/
 #flex ul {
     color: purple;
     display: flex;
@@ -29,6 +51,9 @@ h1 {
     overflow: hidden;
 }
 
+/*  In order to make the app responsive the text is 
+    set to 70% to prevent overflow issues.
+*/
 @media screen and (max-width: 244px) {
     html {
         font-size: 70%;
