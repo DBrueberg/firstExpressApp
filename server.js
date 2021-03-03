@@ -6,7 +6,8 @@
 // Naming the HTTP_PORT to auto read the port or be port 8080
 var HTTP_PORT = process.env.PORT || 8080;
 // Initializing a variable to use express
-const express = require('express');
+const express = require('express')
+const path = require('path')
 // Constructing an express object to use its methods
 const app = new express();
 
@@ -14,6 +15,8 @@ const app = new express();
 app.get("/", (req, res) => {
     res.sendFile(__dirname + '/index.html')
 });
+
+app.use(express.static(path.join(__dirname, 'public')));
 
 // Listening for the HTTP_PORT so it can be loaded in
 app.listen(HTTP_PORT);
