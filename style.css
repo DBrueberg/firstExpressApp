@@ -1,0 +1,36 @@
+html {
+    background-color: white;
+    height: 100%;
+}
+
+body {
+    background-color: bisque;
+    border-radius: .5em;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    padding: 1em;
+    margin: 1em auto;
+    overflow: hidden;
+}
+
+h1 {
+    color: darkred;
+    overflow: hidden;
+}
+
+#flex ul {
+    color: purple;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    list-style: none;
+    padding-left: 0;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 244px) {
+    html {
+        font-size: 70%;
+    }
+}
